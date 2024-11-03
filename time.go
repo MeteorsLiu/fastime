@@ -27,6 +27,6 @@ func init() {
 	})
 	// if the VDSO is slow, don't use
 	if nt <= ct+100 {
-		Now64 = Nanotime
+		Now = Nanotime
 	}
 }
