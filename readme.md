@@ -10,7 +10,7 @@ For performance, we only need the "increment" timestamp.
 fastime.Now()
 ```
 
-Now() returns "increment" timestamp in ns, which may be walltime or not a walltime, in other words, **_the time is not corrent all the time._**
+Now() returns "increment" timestamp in ns, which may be a walltime or not a walltime, in other words, *the time is not corrent all the time.*
 
 ## Benchmark
 
@@ -26,3 +26,5 @@ BenchmarkFastTime-8   	80893653	        14.99 ns/op
 PASS
 ok  	github.com/MeteorsLiu/fastime	3.556s
 ```
+
+2-3x faster than time.Now()
